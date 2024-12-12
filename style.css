@@ -1,0 +1,300 @@
+
+
+.header {
+    background: #0bc4e0;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header-str {
+    background: #0bc4e0;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.meni{
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    margin: 0 1rem;
+    border: 2px solid black;
+}
+
+.meni a{
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 15%;
+    transition: all 0.3 ease;
+  
+}
+
+.meni a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#klik{
+    text-align: center;
+    color: green;
+}
+
+.slikazla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slikazla img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+main {
+    padding: 2rem;
+    color: #0b0b0b;
+}
+
+
+#ozla{
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+#ozla h2{
+    color: #000000;
+    text-decoration: none;
+}
+
+#ozla p{
+    color: #000000;
+    text-decoration: dashed ;
+}
+
+.dugme {
+    margin-left: 50px;
+}
+
+
+form input{
+    font-family: Arial, sans-serif;
+    color: purple;
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid;
+    letter-spacing: 5px;
+    padding: 5px 10px ;
+}
+
+form input:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+form textarea{
+    font-family: Arial, sans-serif; 
+    color: purple;
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid;
+    letter-spacing: 5px;
+    padding: 0px 10px ;
+}
+
+form textarea:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+ 
+#dugmeslanje {
+    font-family: Arial, sans-serif;
+    color: purple;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#dugmereset {
+    font-family: Arial, sans-serif;
+    color: purple;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background: #0bc4e0;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+}
+
+#apart1{
+    height: 250px;
+    width: 45%;
+    margin-left: 10px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 15px black;
+}
+
+#apart1:hover{
+    color: white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#tekst1{
+    text-align: center;
+    padding: 15px;
+    color: black;
+}
+
+#apart2{
+    height: 250px;
+    width: 45%;
+    margin-left: 10px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 15px black;
+}
+
+#apart2:hover{
+    color: white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#tekst2{
+    text-align: center;
+    padding: 15px;
+    color: black;
+}
+
+#animacija{
+    width: 300px;
+    height: 250px;
+    animation:animacija 4s linear infinite ;
+    display: block;
+    margin: auto;
+    margin-top: 130px;
+}
+
+@keyframes animacija{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@media (max-width: 768px) {
+    .header, .header-str, footer {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .meni a {
+        width: 90%; 
+        margin-bottom: 10px;
+    }
+
+    form input, form textarea {
+        width: 90%; 
+        margin-bottom: 15px; 
+    }
+
+    .blog {
+        width: 100%; 
+        margin: 1rem auto;
+    }
+
+    #apart1, #apart2 {
+        width: 90%; 
+        margin: auto; 
+        height: auto; 
+    }   
+
+    .dugme {
+        margin-left: 0; 
+        text-align: center;
+    }
+    
+
+    #dugmeslanje{
+        margin-bottom: 15px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+
+    #dugmereset{
+        margin-bottom: 15px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header, .header-str {
+        font-size: 0.5rem;
+    }
+
+    .meni a {
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.5rem;
+        letter-spacing: 2px; 
+    }
+
+    #apart1, #apart2 {
+        width: 100%; 
+        margin: 10px 0; 
+        box-shadow: 3px 10px black; 
+    }
+
+    #tekst1, #tekst2 {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    #dugmeslanje{
+        margin-bottom: 15px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+
+    #dugmereset{
+        margin-bottom: 15px;
+        margin-left: 20px; 
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.5rem;
+    }
+}
